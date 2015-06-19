@@ -1,25 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Gist
-
-    @ShuraDE
-
-1
-0
-
-    3
-
-ShuraDE/ar3play-server forked from gruppe-adler/ar3play-server
-
-ar3play-server/lib/rpc.ts
-@Fusselwurm Fusselwurm on 26 Apr incr rpc timeout to 90s
-
-1 contributor
-147 lines (125 sloc) 3.881 kB
 /// <reference path="./../typings/tsd.d.ts" />
 
 import _ = require('underscore');
