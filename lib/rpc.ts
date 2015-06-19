@@ -1,3 +1,25 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Gist
+
+    @ShuraDE
+
+1
+0
+
+    3
+
+ShuraDE/ar3play-server forked from gruppe-adler/ar3play-server
+
+ar3play-server/lib/rpc.ts
+@Fusselwurm Fusselwurm on 26 Apr incr rpc timeout to 90s
+
+1 contributor
+147 lines (125 sloc) 3.881 kB
 /// <reference path="./../typings/tsd.d.ts" />
 
 import _ = require('underscore');
@@ -75,6 +97,16 @@ export function setAllUnitData(allUnitData: Array<Array<any>>, callback: Functio
     callback && callback(null, 201);
 }
 
+export function setUnitDespawned(brokenUnits: Array<any>, callback: Function) {
+    verify.arr(brokenUnits, 'array').keepAlive();
+    
+	brokenUnits.forEach(function (datum) {
+        //something to do here 
+    });
+
+    callback && callback(null, 201);
+}
+
 export function setUnitDatum(unitData: Array<any>, callback: Function) {
     verify.arr(unitData, 'array').keepAlive();
 
@@ -144,3 +176,8 @@ function registerAll() {
     rpc.register('setUnitDatum', setUnitDatum);
     rpc.register('setAllUnitData', setAllUnitData);
 }
+
+    Status API Training Shop Blog About Help 
+
+    © 2015 GitHub, Inc. Terms Privacy Security Contact 
+
