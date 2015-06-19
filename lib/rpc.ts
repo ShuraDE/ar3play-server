@@ -78,7 +78,7 @@ export function setAllUnitData(allUnitData: Array<Array<any>>, callback: Functio
 export function setUnitDespawned(brokenUnits: Array<any>, callback: Function) {
     verify.arr(brokenUnits, 'array').keepAlive();
     
-	brokenUnits.forEach(function (datum) {
+    brokenUnits.forEach(function (datum) {
         //something to do here 
     });
 
