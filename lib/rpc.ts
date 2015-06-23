@@ -153,7 +153,7 @@ function registerAll() {
     rpc.register('setPlayerData', notImplemented);
     rpc.register('setUnitDatum', setUnitDatum);
     rpc.register('setAllUnitData', setAllUnitData);
-	rpc.register('setUnitDespawned', setUnitDespawned);
+    rpc.register('setUnitDespawned', setUnitDespawned);
 }
 /**
     Status API Training Shop Blog About Help 
